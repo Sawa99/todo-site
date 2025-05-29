@@ -84,4 +84,12 @@ body {
         border-radius: 0.75rem;
         border: solid var(--clr-outline) 1rem;
     }
+
+    .completed {
+        opacity: 0.5;
+    }
+
+    .completed .output {
+        text-decoration: line-through;
+    }
 }
