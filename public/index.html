@@ -5,7 +5,7 @@
         <meta name="Author" content="Sarah Wild">
         <meta name="Description" content="Todo list app">
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
         <title>Todo list</title>
     </head>
 
@@ -17,9 +17,13 @@
         <main>
             <form>
                 <input id="task" type="text" class="add-task" placeholder="Please enter task" value="">
-                <button type="button" class="btn" onclick="create()"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                <button type="button" class="btn" onclick="create()"><i class="fa-solid fa-plus" aria-hidden="true"></i></button>
             </form>
             <div id="tasks"></div>
+            <div class="actions">
+            <p>Swipe right to complete<i class="fa-solid fa-arrow-right"></i></p>
+            <p><i class="fa-solid fa-arrow-left"></i>Swipe left to delete</p>
+            </div>
         </main>
         <footer>
         </footer>
