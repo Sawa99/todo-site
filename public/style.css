@@ -43,7 +43,7 @@ body {
 
         .add-task {
             height: 8rem;
-            font-size: 2rem;
+            font-size: 4rem;
             width: 38rem;
             background-color: var(--clr-box-bg);
             color: var(--clr-font);
@@ -70,16 +70,17 @@ body {
     div {
         display: flex;
         flex-direction: column;
-        justify-content: center + 2rem;
+        justify-content: center;
         align-items: center;
     }
 
     .itembox {
         height: 8rem;
-        font-size: 2rem;
+        font-size: 5rem;
         width: 50rem;
         margin: 1rem;
         background-color: var(--clr-box-bg);
+        color: var(--clr-font);
         border-radius: 0.75rem;
         border: solid var(--clr-outline) 1rem;
     }
