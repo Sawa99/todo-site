@@ -1,13 +1,35 @@
 function create() {
-    var box = document.createElement("div");
-    box.setAttribute('class', 'itembox')
-    var holder = document.createElement("p");
-    holder.setAttribute('class', 'output');
-    // You can set the inner text of the p tag without creating a text node.
-    var text = document.getElementById("task").value;
+    const text = document.getElementById("task").value;
+    if (!text.trim()) return;
+
+    const box = document.createElement("div");
+    box.setAttribute("class", "itembox");
+    box.style.position = "relative";
+    box.style.overflow = "hidden";
+
+    const holder = document.createElement("p");
+    holder.setAttribute("class", "output");
     holder.innerText = text;
     box.appendChild(holder);
-    // Trades should be an element with and ID because you probably only ever want to insert into one place.
-    var tasks = document.getElementById("tasks");
-    tasks.appendChild(box);
+
+    document.getElementById("tasks").appendChild(box);
+    document.getElementById("task").value = "";
+
+    let startX = 0;
+    let endX = 0;
+
+    box.addEventListener("touchstart", (e) => {
+        startX = e.touches[0].clientX;
+    }, { passive: true });
+
+    box.addEventListener("touchend", (e) => {
+        endX = e.changedTouches[0].clientX;
+        const deltaX = endX - startX;
+
+        if (deltaX > 50) {
+            box.classList.add("completed");
+        } else if (deltaX < -50) {
+            box.remove();
+        }
+    });
 }

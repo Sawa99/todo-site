@@ -35,11 +35,21 @@ body {
         border: solid var(--clr-outline) 0.5rem;
     }
 
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 85dvh;
+        padding: 2rem;
+        box-sizing: border-box;
+    }
+
     form {
         display: flex;
         align-items: center;
         justify-content: center;
         margin-top: 5rem;
+        margin-bottom: 2rem;
 
         .add-task {
             height: 8rem;
@@ -74,6 +84,16 @@ body {
         align-items: center;
     }
 
+    #tasks {
+        max-height: calc(100vh - 30rem);
+        overflow-y: auto;
+        padding-right: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
     .itembox {
         height: 8rem;
         font-size: 5rem;
@@ -83,5 +103,37 @@ body {
         color: var(--clr-font);
         border-radius: 0.75rem;
         border: solid var(--clr-outline) 1rem;
+    }
+
+    .completed {
+        opacity: 0.5;
+    }
+
+    .completed .output {
+        text-decoration: line-through;
+    }
+
+    .actions {
+        margin-top: 1rem;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: bold;
+        color: var(--clr-h1);
+        background-color: var(--clr-main-bg);
+        padding-top: 2rem;
+
+        i {
+            font-size: 3rem;
+            font-weight: bold;
+            color: var(--clr-h1);
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
+    }
+
+    footer{
+        align-items: center;
+        font: 2rem;
+        color: var(--clr-h1);
     }
 }
