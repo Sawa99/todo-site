@@ -50,6 +50,10 @@ body {
             }
         }
     }
+
+    .itembox {
+        border: 1px solid black;
+    }
 }
 
 header {
