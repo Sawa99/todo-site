@@ -1,0 +1,26 @@
+:root {
+    background-color: #e1d8f7;
+    h1{
+        color: #c0a7eb;
+    }
+    .dot{
+        background-color: #c0a7eb;
+        border: solid #d0bef2 1rem;
+    }
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    font-size: 3rem;
+
+    .dot {
+        height: 3rem;
+        width: 3rem;
+        margin-top: 4.5rem;
+        margin-right: 2rem;
+        padding: 1rem;
+        background-color: #bbb;
+        border-radius: 50%;
+    }
+}    
