@@ -1,3 +1,18 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 3rem;
+
+    .dot {
+        height: 3rem;
+        width: 3rem;
+        margin-top: 4.5rem;
+        margin-right: 2rem;
+        padding: 1rem;
+        border-radius: 50%;
+    }
+}
+
 :root {
     --clr-main-bg: #e1d8f7;
     --clr-h1: #c0a7eb;
@@ -29,7 +44,7 @@ body {
         .add-task {
             height: 8rem;
             font-size: 2rem;
-            width: 35rem;
+            width: 38rem;
             background-color: var(--clr-box-bg);
             color: var(--clr-font);
             border-radius: 0.75rem;
@@ -51,22 +66,21 @@ body {
         }
     }
 
-    .itembox {
-        border: 1px solid black;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center + 2rem;
+        align-items: center;
     }
-}
 
-header {
-    display: flex;
-    justify-content: space-between;
-    font-size: 3rem;
-
-    .dot {
-        height: 3rem;
-        width: 3rem;
-        margin-top: 4.5rem;
-        margin-right: 2rem;
-        padding: 1rem;
-        border-radius: 50%;
+    .itembox {
+        height: 8rem;
+        font-size: 2rem;
+        width: 50rem;
+        margin: 1rem;
+        background-color: var(--clr-box-bg);
+        border-radius: 0.75rem;
+        border: solid var(--clr-outline) 1rem;
     }
 }
