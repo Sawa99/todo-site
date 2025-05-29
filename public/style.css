@@ -39,7 +39,7 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 100vh;
+        height: 85dvh;
         padding: 2rem;
         box-sizing: border-box;
     }
@@ -116,7 +116,7 @@ body {
     .actions {
         margin-top: 1rem;
         text-align: center;
-        font-size: 3rem;
+        font-size: 2rem;
         font-weight: bold;
         color: var(--clr-h1);
         background-color: var(--clr-main-bg);
@@ -129,5 +129,11 @@ body {
             margin-left: 1rem;
             margin-right: 1rem;
         }
+    }
+
+    footer{
+        align-items: center;
+        font: 2rem;
+        color: var(--clr-h1);
     }
 }
