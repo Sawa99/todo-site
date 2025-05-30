@@ -1,3 +1,7 @@
+//Theme changer
+const setTheme = theme => document.documentElement.className = theme;
+
+//function for creating tasks and completeing/removing them
 function create() {
     const text = document.getElementById("task").value;
     if (!text.trim()) return;
@@ -32,4 +36,4 @@ function create() {
             box.remove();
         }
     });
-}
+};

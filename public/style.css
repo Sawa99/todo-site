@@ -1,19 +1,58 @@
 header {
     display: flex;
     justify-content: space-between;
-    font-size: 3rem;
+    font-size: 2.5rem;
 
-    .dot {
-        height: 3rem;
-        width: 3rem;
-        margin-top: 4.5rem;
-        margin-right: 2rem;
-        padding: 1rem;
+    h1 {
+        margin-top: 4rem;
+    }
+
+    #theme-buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        float: right;
+    }
+
+    .theme-btn {
+        width: 6em;
+        height: 6em;
+        padding: 0.5em;
         border-radius: 50%;
+        margin-top: 1rem;
+        margin-right: 1rem;
+        padding: 1rem;
+        background-color: aqua;
+    }
+
+    .purple {
+        background-color: #c0a7eb;
+        border: solid #d0bef2 0.5rem;
+    }
+
+    .pink {
+        background-color: #ff8fab;
+        border: solid #ffb3c6 0.5rem;
+    }
+
+    .blue {
+        background-color: #00b4d8;
+        border: solid #90e0ef 0.5rem;
+    }
+
+    .green {
+        background-color: #b5c99a;
+        border: solid #cfe1b9 0.5rem;
+    }
+
+    .yellow {
+        background-color: #ffe566;
+        border: solid #ffee99 0.5rem;
     }
 }
 
-:root {
+:root,
+:root.purple {
     --clr-main-bg: #e1d8f7;
     --clr-h1: #c0a7eb;
     --clr-outline: #d0bef2;
@@ -22,17 +61,49 @@ header {
     font-family: 'Tahoma', 'Verndana', sans-serif;
 }
 
+:root.pink {
+    --clr-main-bg: #ffe5ec;
+    --clr-h1: #ff8fab;
+    --clr-outline: #ffb3c6;
+    --clr-box-bg: #ff8fab;
+    --clr-font: #ffe5ec;
+    font-family: 'Tahoma', 'Verndana', sans-serif;
+}
+
+:root.blue {
+    --clr-main-bg: #caf0f8;
+    --clr-h1: #00b4d8;
+    --clr-outline: #90e0ef;
+    --clr-box-bg: #00b4d8;
+    --clr-font: #caf0f8;
+    font-family: 'Tahoma', 'Verndana', sans-serif;
+}
+
+:root.green {
+    --clr-main-bg: #e9f5db;
+    --clr-h1: #b5c99a;
+    --clr-outline: #cfe1b9;
+    --clr-box-bg: #b5c99a;
+    --clr-font: #e9f5db;
+    font-family: 'Tahoma', 'Verndana', sans-serif;
+}
+
+:root.yellow {
+    --clr-main-bg: #fff6cc;
+    --clr-h1: #ffe566;
+    --clr-outline: #ffee99;
+    --clr-box-bg: #ffe566;
+    --clr-font: #fff6cc;
+    font-family: 'Tahoma', 'Verndana', sans-serif;
+}
+
+
 body {
     background-color: var(--clr-main-bg);
 
     h1 {
         margin-left: 2rem;
         color: var(--clr-h1);
-    }
-
-    .dot {
-        background: var(--clr-box-bg);
-        border: solid var(--clr-outline) 0.5rem;
     }
 
     main {
@@ -76,25 +147,23 @@ body {
         }
     }
 
-
-    div {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #tasks {
-        max-height: calc(100vh - 30rem);
+    #tasks{
+        min-height: 0;
         overflow-y: auto;
         padding-right: 1rem;
         display: flex;
         flex-direction: column;
+        text-align: center;
         align-items: center;
+        justify-content: flex-start;
         gap: 1rem;
+        flex-grow: 1;
     }
 
     .itembox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         height: 8rem;
         font-size: 5rem;
         width: 50rem;
@@ -103,6 +172,7 @@ body {
         color: var(--clr-font);
         border-radius: 0.75rem;
         border: solid var(--clr-outline) 1rem;
+        text-align: center;
     }
 
     .completed {
@@ -131,7 +201,7 @@ body {
         }
     }
 
-    footer{
+    footer {
         align-items: center;
         font: 2rem;
         color: var(--clr-h1);
