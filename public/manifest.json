@@ -1,0 +1,57 @@
+{
+    "name": "Sarah Wild's CV",
+    "short_name": "SW CV",
+    "icons": [
+        {
+            "src": "icons/web-app-manifest-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "icons/web-app-manifest-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+        },      
+        {
+            "src": "icons/maskable_icon_x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ],
+    "theme_color": "#f7f6f5",
+    "background_color": "#f7f6f5",
+    "display": "standalone",
+    "id": "index.html",
+    "start_url": "./",
+    "description": "Sarah Wild's CV",
+    "shortcuts": [
+        {
+            "name": "Demos",
+            "short_name": "Demos",
+            "description": "Shortcut to demo page",
+            "url": "demos.html",
+            "icons": [
+                {
+                    "src": "icons/demo.png",
+                    "sizes": "192x192"
+                } 
+		] } ],
+
+    "screenshots": [
+        {
+            "src": "icons/screenshot1.png",
+            "type": "image/png",
+            "sizes": "500x608",
+            "form_factor": "narrow"
+        },
+        {
+            "src": "icons/screenshot2.png",
+            "type": "image/png",
+            "sizes": "405x320",
+            "form_factor": "wide"
+        }
+    ]
+}
