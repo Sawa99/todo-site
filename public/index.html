@@ -1,39 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="Author" content="Sarah Wild">
-        <meta name="Description" content="Todo list app">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-        <title>Todo list</title>
-    </head>
 
-    <body>
-        <header>
-            <h1>Todo list</h1>
-            <div id="theme-buttons">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Author" content="Sarah Wild">
+    <meta name="Description" content="Todo list app">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="icons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="icons/favicon.svg" />
+    <link rel="shortcut icon" href="icons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Todo" />
+    <link rel="manifest" href="manifest.json" />
+    <title>Todo list</title>
+</head>
+
+<body>
+    <header>
+        <h1>Todo list</h1>
+        <div id="theme-buttons">
             <button class="theme-btn purple" onclick="setTheme('purple')" title="purple mode">
-            <button class="theme-btn pink" onclick="setTheme('pink')" title="pink mode">
-            <button class="theme-btn blue" onclick="setTheme('blue')" title="blue mode">
-            <button class="theme-btn green" onclick="setTheme('green')" title="green mode">
-            <button class="theme-btn yellow" onclick="setTheme('yellow')" title="yellow mode">
-            </div>
-        </header>
-        <main>
-            <form>
-                <input id="task" type="text" class="add-task" placeholder="Please enter task" value="">
-                <button type="button" class="btn" onclick="create()"><i class="fa-solid fa-plus" aria-hidden="true"></i></button>
-            </form>
-            <div id="tasks"></div>
-            <div class="actions">
+                <button class="theme-btn pink" onclick="setTheme('pink')" title="pink mode">
+                    <button class="theme-btn blue" onclick="setTheme('blue')" title="blue mode">
+                        <button class="theme-btn green" onclick="setTheme('green')" title="green mode">
+                            <button class="theme-btn yellow" onclick="setTheme('yellow')" title="yellow mode">
+        </div>
+    </header>
+    <main>
+        <form>
+            <input id="task" type="text" class="add-task" placeholder="Please enter task" value="">
+            <button type="button" class="btn" onclick="create()"><i class="fa-solid fa-plus"
+                    aria-hidden="true"></i></button>
+        </form>
+        <div id="tasks"></div>
+        <div class="actions">
             <p>Swipe right to complete<i class="fa-solid fa-arrow-right"></i></p>
             <p><i class="fa-solid fa-arrow-left"></i>Swipe left to delete</p>
-            </div>
-        </main>
-        <footer>
-            <p>&copy;2025 by Sarah Wild</p>
-        </footer>
-        <script src="script.js"></script>
-    </body>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;2025 by Sarah Wild</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
 </html>
