@@ -1,6 +1,6 @@
 {
-    "name": "Sarah Wild's CV",
-    "short_name": "SW CV",
+    "name": "Todo App",
+    "short_name": "Todo",
     "icons": [
         {
             "src": "icons/web-app-manifest-512x512.png",
@@ -21,24 +21,12 @@
             "purpose": "maskable"
         }
     ],
-    "theme_color": "#f7f6f5",
-    "background_color": "#f7f6f5",
+    "theme_color": "#c0a7eb",
+    "background_color": "#e1d8f7",
     "display": "standalone",
     "id": "index.html",
     "start_url": "./",
-    "description": "Sarah Wild's CV",
-    "shortcuts": [
-        {
-            "name": "Demos",
-            "short_name": "Demos",
-            "description": "Shortcut to demo page",
-            "url": "demos.html",
-            "icons": [
-                {
-                    "src": "icons/demo.png",
-                    "sizes": "192x192"
-                } 
-		] } ],
+    "description": "Todo App made by Sarah Wild",
 
     "screenshots": [
         {
