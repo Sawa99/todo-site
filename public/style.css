@@ -1,10 +1,11 @@
 header {
     display: flex;
     justify-content: space-between;
-    font-size: 2.5rem;
+    font-size: 3rem;
 
     h1 {
         margin-top: 3rem;
+        font-size: 3rem;
     }
 
     #theme-buttons {
@@ -105,49 +106,55 @@ body {
         color: var(--clr-h1);
     }
 
+    main {
+    display: flex;
+    flex-direction: column;
+    height: 85vh; 
+    }
+
     form {
         display: flex;
         align-items: center;
         justify-content: center;
         margin-top: 5rem;
         margin-bottom: 2rem;
+        overflow: auto;
+    }
 
-        .add-task {
-            height: 8rem;
-            font-size: 4rem;
-            width: 38rem;
-            background-color: var(--clr-box-bg);
+    .add-task {
+        height: 8rem;
+        font-size: 4rem;
+        width: 38rem;
+        background-color: var(--clr-box-bg);
+        color: var(--clr-font);
+        border-radius: 0.75rem;
+        border: solid var(--clr-outline) 1rem;
+        margin-right: 1rem;
+    }
+
+    .btn {
+        height: 10rem;
+        width: 10rem;
+        border-radius: 0.75rem;
+        background-color: var(--clr-box-bg);
+        border: solid var(--clr-outline) 1rem;
+
+        i {
+            font-size: 2rem;
             color: var(--clr-font);
-            border-radius: 0.75rem;
-            border: solid var(--clr-outline) 1rem;
-            margin-right: 1rem;
-        }
-
-        .btn {
-            height: 10rem;
-            width: 10rem;
-            border-radius: 0.75rem;
-            background-color: var(--clr-box-bg);
-            border: solid var(--clr-outline) 1rem;
-
-            i {
-                font-size: 2rem;
-                color: var(--clr-font);
-            }
         }
     }
 
     #tasks {
-        min-height: 0;
-        overflow-y: auto;
-        padding-right: 1rem;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-        justify-content: flex-start;
-        gap: 1rem;
-        flex-grow: 1;
+    flex-grow: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    min-height: 0; 
     }
 
     .itembox {
@@ -174,24 +181,25 @@ body {
     }
 
     .actions {
-        margin-top: 1rem;
-        text-align: center;
-        font-size: 2rem;
-        font-weight: bold;
-        color: var(--clr-h1);
-        background-color: var(--clr-main-bg);
-        padding-top: 2rem;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--clr-h1);
+    background-color: var(--clr-main-bg);
+    padding: 2rem 0;
 
         i {
             font-size: 3rem;
             font-weight: bold;
             color: var(--clr-h1);
-            margin-left: 1rem;
-            margin-right: 1rem;
+            margin: 0 1rem;
         }
     }
 
     footer {
+        position: fixed;
+        bottom:0;
         align-items: center;
         font: 2rem;
         color: var(--clr-h1);

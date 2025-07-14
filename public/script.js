@@ -1,7 +1,6 @@
 //Theme changer
 const setTheme = theme => document.documentElement.className = theme;
 
-//function for creating tasks and completeing/removing them
 function create() {
     const text = document.getElementById("task").value;
     if (!text.trim()) return;
@@ -37,3 +36,13 @@ function create() {
         }
     });
 };
+
+//keybinds it to enter
+const input = document.getElementById('task');
+
+input.addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+        event.preventDefault();
+        create();
+    }
+});
