@@ -1,10 +1,11 @@
 header {
     display: flex;
     justify-content: space-between;
-    font-size: 2.5rem;
+    font-size: 3rem;
 
     h1 {
         margin-top: 3rem;
+        font-size: 3rem;
     }
 
     #theme-buttons {
@@ -16,8 +17,8 @@ header {
     }
 
     .theme-btn {
-        width: 6em;
-        height: 6em;
+        width: 6rem;
+        height: 6rem;
         padding: 0.5em;
         border-radius: 50%;
         margin-right: 1rem;
@@ -106,12 +107,9 @@ body {
     }
 
     main {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 85dvh;
-        padding: 2rem;
-        box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 85vh; 
     }
 
     form {
@@ -120,43 +118,43 @@ body {
         justify-content: center;
         margin-top: 5rem;
         margin-bottom: 2rem;
+        overflow: auto;
+    }
 
-        .add-task {
-            height: 8rem;
-            font-size: 4rem;
-            width: 38rem;
-            background-color: var(--clr-box-bg);
+    .add-task {
+        height: 8rem;
+        font-size: 4rem;
+        width: 38rem;
+        background-color: var(--clr-box-bg);
+        color: var(--clr-font);
+        border-radius: 0.75rem;
+        border: solid var(--clr-outline) 1rem;
+        margin-right: 1rem;
+    }
+
+    .btn {
+        height: 10rem;
+        width: 10rem;
+        border-radius: 0.75rem;
+        background-color: var(--clr-box-bg);
+        border: solid var(--clr-outline) 1rem;
+
+        i {
+            font-size: 2rem;
             color: var(--clr-font);
-            border-radius: 0.75rem;
-            border: solid var(--clr-outline) 1rem;
-            margin-right: 1rem;
-        }
-
-        .btn {
-            height: 10rem;
-            width: 10rem;
-            border-radius: 0.75rem;
-            background-color: var(--clr-box-bg);
-            border: solid var(--clr-outline) 1rem;
-
-            i {
-                font-size: 2rem;
-                color: var(--clr-font);
-            }
         }
     }
 
-    #tasks{
-        min-height: 0;
-        overflow-y: auto;
-        padding-right: 1rem;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-        justify-content: flex-start;
-        gap: 1rem;
-        flex-grow: 1;
+    #tasks {
+    flex-grow: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    min-height: 0; 
     }
 
     .itembox {
@@ -183,26 +181,87 @@ body {
     }
 
     .actions {
-        margin-top: 1rem;
-        text-align: center;
-        font-size: 2rem;
-        font-weight: bold;
-        color: var(--clr-h1);
-        background-color: var(--clr-main-bg);
-        padding-top: 2rem;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--clr-h1);
+    background-color: var(--clr-main-bg);
+    padding: 2rem 0;
 
         i {
             font-size: 3rem;
             font-weight: bold;
             color: var(--clr-h1);
-            margin-left: 1rem;
-            margin-right: 1rem;
+            margin: 0 1rem;
         }
     }
 
     footer {
+        position: fixed;
+        bottom:0;
         align-items: center;
         font: 2rem;
         color: var(--clr-h1);
+    }
+}
+
+@media screen and (min-width: 49rem) {
+    header {
+        font-size: 1rem;
+
+        h1 {
+            margin-top: 1rem;
+        }
+
+        #theme-buttons {
+            margin-top: 1rem;
+        }
+
+        .theme-btn {
+            width: 3rem;
+            height: 3rem;
+            padding: 0.25em;
+        }
+    }
+
+    body {
+        form {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+
+            .add-task {
+                height: 4rem;
+                font-size: 2rem;
+                width: 50rem;
+                margin-right: 0.75rem;
+                margin-left:-0.75rem;
+            }
+
+            .btn {
+                height: 6rem;
+                width: 6rem;
+
+                i {
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        .itembox {
+            height: 4rem;
+            font-size: 3rem;
+            width: 57rem;
+            margin: 0.5rem;
+        }
+
+        .actions {
+            font-size: 1.5rem;
+            padding-top: 1rem;
+
+            i {
+                font-size: 1.5rem;
+            }
+        }
     }
 }
