@@ -81,7 +81,7 @@ header {
 
 :root.green {
     --clr-main-bg: #e9f5db;
-    --clr-h1: #b5c99a;
+    --clr-h1: #4F7942;
     --clr-outline: #cfe1b9;
     --clr-box-bg: #b5c99a;
     --clr-font: #e9f5db;
@@ -90,7 +90,7 @@ header {
 
 :root.yellow {
     --clr-main-bg: #fff6cc;
-    --clr-h1: #ffe566;
+    --clr-h1: #E49B0F;
     --clr-outline: #ffee99;
     --clr-box-bg: #ffe566;
     --clr-font: #fff6cc;
